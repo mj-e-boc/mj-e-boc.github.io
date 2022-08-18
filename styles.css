@@ -213,6 +213,8 @@ a {
   align-items: center;
   background-color: #f7f7f9;
   border-radius: 5px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .lans {
