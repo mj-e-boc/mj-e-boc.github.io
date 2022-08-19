@@ -206,12 +206,19 @@ a {
   margin-bottom: 8%;
 }
 
+.lanitem {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  background-color: #f7f7f9;
+  margin-bottom: 5%;
+  margin-right: auto;
+}
+
 .language {
   margin-bottom: 4%;
-  display: flex;
   gap: 10%;
   align-items: center;
-  background-color: #f7f7f9;
   border-radius: 5px;
   list-style: none;
   padding-left: 0;
