@@ -182,7 +182,6 @@ a {
   gap: 2%;
   align-items: center;
 }
-
 .skills {
   display: flex;
   gap: 5%;
@@ -195,6 +194,11 @@ a {
   color: #6070ff;
   border-radius: 5px;
   padding: 1%;
+}
+
+.skillitem {
+  float: left;
+  margin-left: 2%;
 }
 
 .projectbutton {
