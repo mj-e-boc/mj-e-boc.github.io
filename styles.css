@@ -198,12 +198,29 @@ a {
 }
 
 .projectbutton {
+  position: relative;
   color: #6070ff;
   padding: 4%;
   background-color: #fff;
   border: 1px solid #6070ff;
   border-radius: 5px;
   margin-bottom: 8%;
+}
+
+.projectbutton::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: 28%;
+  right: 15%;
+  background-color: #6070ff;
+  height: 2px;
+  cursor: pointer;
+  transform: scale(0%);
+}
+
+.projectbutton:hover::after {
+  transform: scale(100%);
 }
 
 .lanitem {
@@ -259,6 +276,23 @@ a {
   border: 1px solid #6070ff;
   border-radius: 12px;
   margin-bottom: 3%;
+  position: relative;
+}
+
+#resumebutton::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 28%;
+  right: 10%;
+  background-color: #6070ff;
+  height: 2px;
+  cursor: pointer;
+  transform: scale(0%);
+}
+
+#resumebutton:hover::after {
+  transform: scale(100%);
 }
 
 form {
@@ -317,4 +351,23 @@ form p {
   border: 1px solid #cfd8dc;
   margin-right: auto;
   margin-left: 4.5%;
+  position: relative;
+  cursor: pointer;
+}
+
+#submit::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 28%;
+  right: 10%;
+  background-color: #6070ff;
+  height: 2px;
+  cursor: pointer;
+  transform: scale(0%);
+}
+
+#submit:hover::after {
+  transform: scale(100%);
+  cursor: pointer;
 }
