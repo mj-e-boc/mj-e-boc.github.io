@@ -9,7 +9,8 @@ body {
   padding: 0 0 0 0;
   background-image: url(./images/header-shapes\ mobile@2x.svg);
   background-size: 100%;
-  background-position: 20% top;
+  background-repeat: no-repeat;
+
   border-bottom-left-radius: 60px;
   margin: 0 0 0 0;
 }
@@ -565,5 +566,18 @@ form p {
 
   form p {
     width: 56%;
+  }
+
+  .frontpage {
+    background-image: url(./images/icon1.svg), url(./images/Rectangle.svg),
+      url(./images/ellipse1.svg), url(./images/rectangle\ left.svg),
+      url(./images/midellipse.svg), url(./images/Rectangle\ 7.svg),
+      url(./images/Ellipse\ 7.svg), url(./images/Rectangle\ 5.svg),
+      url(./images/Ellipse\ 4.svg), url(./images/Ellipse\ 12.svg),
+      url(./images/Ellipse\ 13.svg);
+    background-size: 15%, 15%, 8%, 8%, 5%, 10%, 4%, 10%, 2%, 2%, 2%;
+
+    background-position: 90% 30%, 85% 20%, 5% 30%, 1% 25%, 50% 38%, 50% 35%,
+      65% 15%, 60% 85%, 62% 81.8%, 10% 88%, 9.5% 90%;
   }
 }
