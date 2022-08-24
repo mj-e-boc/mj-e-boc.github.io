@@ -580,4 +580,15 @@ form p {
     background-position: 90% 30%, 85% 20%, 5% 30%, 1% 25%, 50% 38%, 50% 35%,
       65% 15%, 60% 85%, 62% 81.8%, 10% 88%, 9.5% 90%;
   }
+
+  form {
+    background-image: url(./images/Ellipse\ 5.svg),
+      url(./images/Rectangle\ 9.svg), url(./images/Ellipse\ 1.svg),
+      url(./images/Rectangle\ 4.svg), url(./images/Ellipse\ 3.svg),
+      url(./images/Ellipse\ b.svg), url(./images/Rectangle\ 6.svg),
+      url(./images/Ellipse\ 11.svg);
+    background-size: 5%, 10%, 2%, 10%, 11%, 5%, 3%, 2%;
+    background-position: 5% 50%, 5% 47.5%, 33% 20%, 85% 18%, 90% 22.5%, 86% 86%,
+      30% 90.5%, 31% 91.5%;
+  }
 }
