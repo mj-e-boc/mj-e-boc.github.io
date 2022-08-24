@@ -7,9 +7,9 @@ body {
 .frontpage {
   background-color: #fff;
   padding: 0 0 0 0;
-  background-image: url(/images/header-shapes\ mobile.png);
+  background-image: url(./images/header-shapes\ mobile@2x.svg);
   background-size: 100%;
-  background-position: 60% top;
+  background-repeat: no-repeat;
   border-bottom-left-radius: 60px;
   margin: 0 0 0 0;
 }
@@ -26,12 +26,34 @@ a {
   color: #6070ff;
 }
 
+.navitem a {
+  color: #344563;
+}
+
+.mobilenav {
+  margin: 0 0 20% 0;
+  padding: 15% 0 0 0;
+}
+
+.webnav {
+  padding-top: 4%;
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin: 0 0 20% 0;
-  padding: 15% 0 0 0;
+}
+
+.logo a {
+  color: #6070ff;
+}
+
+.DTnavbar {
+  display: flex;
+  list-style: none;
+  gap: 2%;
 }
 
 .bar {
@@ -136,11 +158,14 @@ a {
   width: 90%;
   height: auto;
   border-radius: 10px;
+  margin-left: 5%;
 }
 
-.imgcontainer {
-  display: flex;
-  justify-content: center;
+.img2 {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin: 3% auto auto 5%;
 }
 
 .project2 {
@@ -175,6 +200,11 @@ a {
   width: 90%;
 }
 
+.projectinfo2 {
+  margin: auto;
+  width: 90%;
+}
+
 .profile {
   display: flex;
   list-style: none;
@@ -200,7 +230,37 @@ a {
 .projectbutton {
   position: relative;
   color: #6070ff;
-  padding: 4%;
+  padding: 3%;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 5px;
+  margin-bottom: 8%;
+}
+
+.project1button {
+  position: relative;
+  color: #6070ff;
+  padding: 3%;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 5px;
+  margin-bottom: 8%;
+}
+
+.project2button {
+  position: relative;
+  color: #6070ff;
+  padding: 3%;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 5px;
+  margin-bottom: 8%;
+}
+
+.project3button {
+  position: relative;
+  color: #6070ff;
+  padding: 3%;
   background-color: #fff;
   border: 1px solid #6070ff;
   border-radius: 5px;
@@ -297,8 +357,9 @@ a {
 
 form {
   background-color: #6070ff;
-  background-image: url(./images/headershapes\ mobile.png);
+  background-image: url(./images/contact\ form\ shapes-mobile@2x.svg);
   background-repeat: no-repeat;
+  background-position: right 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,7 +381,7 @@ textarea {
   width: 90%;
   border-radius: 10px;
   border: 1px solid #cfd8dc;
-  height: 100px;
+  height: 120px;
 }
 
 form p,
@@ -375,7 +436,194 @@ form p {
   transform: scaleX(1);
 }
 
+#submit:active {
+  background-color: #2230d2;
+  z-index: 1;
+  color: #fff;
+  transform: scaleX(1);
+}
+
 ::placeholder {
   font-family: "Poppins", sans-serif;
   padding-left: 0.5%;
+}
+
+@media all and (min-width: 768px) {
+  .img1 {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    float: left;
+    margin-bottom: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .webnav {
+    display: block;
+    padding-bottom: 25%;
+  }
+
+  .mobilenav {
+    display: none;
+  }
+
+  .dtview {
+    padding: 0 17%;
+  }
+
+  .projectinfo {
+    margin: 8% 0;
+  }
+
+  .projectinfo2 {
+    margin: 8% 0;
+    float: left;
+    width: 40%;
+    margin-left: 7%;
+  }
+
+  .textitems {
+    margin-top: 11%;
+  }
+
+  .projpara {
+    width: 100%;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-row-end: 4;
+    row-gap: 5%;
+    width: 85%;
+    margin: 20% auto;
+  }
+
+  .img2 {
+    margin-top: 10%;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 3%;
+    float: right;
+  }
+
+  .project1button {
+    padding: 1%;
+  }
+
+  .project3button {
+    padding: 1%;
+  }
+
+  .details {
+    padding-top: 1%;
+    margin-top: 0;
+  }
+
+  .abtme {
+    padding-top: 10%;
+    margin-top: 30%;
+  }
+
+  .leftitems {
+    float: left;
+    width: 40%;
+    padding-right: 2%;
+  }
+
+  .lanitem {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+  }
+
+  .language {
+    display: flex;
+  }
+
+  .lans {
+    margin-top: 3%;
+  }
+
+  input {
+    width: 40%;
+    border-radius: 0;
+    border: none;
+  }
+
+  textarea {
+    width: 40%;
+    border-radius: 0%;
+  }
+
+  #submit {
+    margin: auto;
+    padding: 1%;
+    width: 13%;
+  }
+
+  #resumebutton {
+    margin-top: 5%;
+  }
+
+  .outro {
+    margin: 5% auto;
+  }
+
+  form p {
+    width: 56%;
+  }
+
+  .frontpage {
+    background-image:
+      url(./images/icon1.svg),
+      url(./images/Rectangle.svg),
+      url(./images/ellipse1.svg),
+      url(./images/rectangle\ left.svg),
+      url(./images/midellipse.svg),
+      url(./images/Rectangle\ 7.svg),
+      url(./images/Ellipse\ 7.svg),
+      url(./images/Rectangle\ 5.svg),
+      url(./images/Ellipse\ 4.svg),
+      url(./images/Ellipse\ 12.svg),
+      url(./images/Ellipse\ 13.svg);
+    background-size: 15%, 15%, 8%, 8%, 5%, 10%, 4%, 10%, 2%, 2%, 2%;
+    background-position:
+      90% 30%,
+      85% 20%,
+      5% 30%,
+      1% 25%,
+      50% 38%,
+      50% 35%,
+      65% 15%,
+      60% 85%,
+      62% 81.8%,
+      10% 88%,
+      9.5% 90%;
+  }
+
+  form {
+    background-image:
+      url(./images/Ellipse\ 5.svg),
+      url(./images/Rectangle\ 9.svg),
+      url(./images/Ellipse\ 1.svg),
+      url(./images/Rectangle\ 4.svg),
+      url(./images/Ellipse\ 3.svg),
+      url(./images/Ellipse\ b.svg),
+      url(./images/Rectangle\ 6.svg),
+      url(./images/Ellipse\ 11.svg);
+    background-size: 5%, 10%, 2%, 10%, 11%, 5%, 3%, 2%;
+    background-position:
+      5% 50%,
+      5% 47.5%,
+      33% 20%,
+      85% 18%,
+      90% 22.5%,
+      86% 86%,
+      30% 90.5%,
+      31% 91.5%;
+  }
 }

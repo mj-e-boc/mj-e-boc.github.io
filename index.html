@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
+
   <body>
     <main class="frontpage">
       <div class="maincontents">
         <header>
-          <nav>
+          <nav class="webnav">
+            <ul class="DTnavbar">
+              <li class="logo"><a href="#">M Jay</a></li>
+              <li class="navitem"><a href="#projects">Portfolio</a></li>
+              <li class="navitem"><a href="#me">About</a></li>
+              <li class="navitem"><a href="#contactus">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="mobilenav">
             <ul class="navbar">
               <li class="logo"><a href="#">M Jay</a></li>
               <li class="bars">
@@ -27,7 +36,7 @@
             </ul>
           </nav>
         </header>
-        <section>
+        <section class="dtview">
           <h1 class="mainintro">I'm Ronald Glad to see you!</h1>
           <p class="paraintro">
             I’m a software developer! I can help you build a product , feature
@@ -83,7 +92,7 @@
         </div>
 
         <div class="projectinfo">
-          <h2>Calculator</h2>
+          <h2 class="textitems">Calculator</h2>
           <ul class="profile">
             <li>CANOPY</li>
             <li><img src="./images/Counter.png" alt="an image of a dot" /></li>
@@ -100,19 +109,19 @@
             <li class="skillitem">css</li>
             <li class="skillitem">javascript</li>
           </ul>
-          <button class="projectbutton" type="button">See Project</button>
+          <button class="project1button" type="button">See Project</button>
         </div>
       </div>
       <div class="project2">
         <div class="imgcontainer">
           <img
-            class="img1"
+            class="img2"
             src="./images/gaming.jpg"
             alt="an image of project1"
           />
         </div>
-        <div class="projectinfo">
-          <h2>Quiz game</h2>
+        <div class="projectinfo2">
+          <h2 class="textitems">Quiz game</h2>
           <ul class="profile">
             <li>CANOPY</li>
             <li><img src="./images/Counter.png" alt="an image of a dot" /></li>
@@ -129,7 +138,9 @@
             <li class="skillitem">css</li>
             <li class="skillitem">javascript</li>
           </ul>
-          <button class="projectbutton" type="button">See Project</button>
+          <button class="projectbutton button1" type="button">
+            See Project
+          </button>
         </div>
       </div>
       <div class="project3">
@@ -141,7 +152,7 @@
           />
         </div>
         <div class="projectinfo">
-          <h2>Song Selector</h2>
+          <h2 class="textitems">Song Selector</h2>
           <ul class="profile">
             <li>CANOPY</li>
             <li><img src="./images/Counter.png" alt="an image of a dot" /></li>
@@ -158,18 +169,18 @@
             <li class="skillitem">css</li>
             <li class="skillitem">javascript</li>
           </ul>
-          <button class="projectbutton" type="button">See Project</button>
+          <button class="project3button" type="button">See Project</button>
         </div>
       </div>
       <div class="project4">
         <div class="imgcontainer">
           <img
-            class="img1"
+            class="img2"
             src="./images/pexels-scott-webb-430208.jpg"
             alt="an image of project1"
           />
         </div>
-        <div class="projectinfo">
+        <div class="projectinfo2">
           <h2>Technology</h2>
           <ul class="profile">
             <li>CANOPY</li>
@@ -192,48 +203,53 @@
       </div>
     </section>
 
-    <section class="abtme">
+    <section class="abtme" id="me">
       <div class="details">
-        <h2 class="me">About Myself</h2>
-        <p class="outropara">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <h2 class="outro">LET'S CONNECT</h2>
-        <ul class="footericons2">
-          <li>
-            <a href="#"
-              ><img src="./images/twitter.svg" alt="an image of a twitter icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="./images/Linkedinicon.svg"
-                alt="an image of a linkedin icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./images/bigm.svg" alt="an image of big m icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./images/github.svg" alt="an image of a github icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="./images/evangelist.svg"
-                alt=" an image of an evangelist icon"
-            /></a>
-          </li>
-        </ul>
-        <button id="resumebutton" type="button">Get my resume</button>
+        <div class="leftitems">
+          <h2 class="me">About Myself</h2>
+          <p class="outropara">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <h2 class="outro">LET'S CONNECT</h2>
+          <ul class="footericons2">
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/twitter.svg"
+                  alt="an image of a twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/Linkedinicon.svg"
+                  alt="an image of a linkedin icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/bigm.svg" alt="an image of big m icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/github.svg" alt="an image of a github icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/evangelist.svg"
+                  alt=" an image of an evangelist icon"
+              /></a>
+            </li>
+          </ul>
+          <button id="resumebutton" type="button">Get my resume</button>
+        </div>
+
         <div class="lans">
           <h3 class="item1">Languages</h3>
           <img src="./images/Union1.png" alt="arrow" />
@@ -260,9 +276,9 @@
         </ul>
         <div class="itemskill">
           <h3 class="item">Frameworks</h3>
-          <a href="#"
-            ><div><img src="./images/Union.png" alt="arrow" /></div
-          ></a>
+          <a href="#">
+            <div><img src="./images/Union.png" alt="arrow" /></div>
+          </a>
         </div>
         <div class="itemskill">
           <h3 class="item">Skills</h3>
@@ -275,6 +291,7 @@
     https://formspree.io/f/xnqrnqov"
       method="post"
       name="#"
+      id="contactus"
     >
       <h2>Contact me</h2>
       <p>
