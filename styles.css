@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* ul {
+  list-style-type: none;
+}
+
+/* front page */
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-image: url(./Images/pageimages/international.jpg);
+  background-size: 80%;
+  z-index: 9999;
+  width: 100vw;
+}
+
+nav {
+  margin-left: 8%;
+}
+
+header img {
+  width: 25%;
+  margin-left: 30%;
+}
+
+.navbars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #404040;
+}
+
+.main {
+  background-image: url(./Images/pageimages/international.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 5%;
+  margin: 0;
+}
+
+.main h1 {
+  font-weight: 100;
+  color: #ec5242;
+  padding-top: 15%;
+  margin-bottom: 0;
+}
+
+.main h2 {
+  color: rgb(92.5%, 32.2%, 25.9%, 60%);
+  text-align: left;
+  background-image: url(./Images/pageimages/textbackground.jpg);
+  background-clip: text;
+  background-size: cover;
+  -webkit-background-clip: text;
+  width: 40%;
+  font-weight: bolder;
+  margin-top: 0;
+  padding-top: none;
+}
+.description {
+  color: rgb(25.1%, 25.1%, 25.1%, 60%);
+  padding: 10% 0;
+}
+
+.date {
+  font-weight: bold;
+  color: rgb(25.1%, 25.1%, 25.1%, 80%);
+}
+
+.location {
+  color: rgb(25.1%, 25.1%, 25.1%, 80%);
+}
+
+/* about section */
+
+.program {
+  padding: 10% 5% 10% 5%;
+  background-color: #282b32;
+  background-image: url(./Images/pageimages/smokey.jpg);
+}
+
+.programactivities img {
+  margin: 0;
+  object-fit: cover;
+  width: 60%;
+}
+
+.program h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.imageicon {
+  padding: 0;
+  margin: 0;
+  width: 80px;
+}
+
+.mainul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  background-color: #3b3e45;
+  margin-bottom: 1%;
+  padding: 5%;
+}
+
+.activity {
+  color: #ec5242;
+}
+
+.paragraph {
+  font-size: 12px;
+  color: #fff;
+}
+
+.program button {
+  text-align: center;
+  padding: 8%;
+  background-color: #ec5242;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  color: #fff;
+  font-weight: 300;
+  border: none;
+}
+
+/* dj content */
+
+.featureddjs {
+  padding: 10% 5% 5% 5%;
+}
+
+.featureddjs h2 {
+  color: #282b32;
+}
+
+.djimage {
+  padding-right: 15%;
+}
+
+.featureddjs ul {
+  padding: 0;
+}
+
+.djcontent {
+  display: flex;
+}
+
+.djimage {
+  position: relative;
+}
+
+.image1 {
+  width: 40px;
+  z-index: -10;
+  top: -30px;
+  left: -100;
+  height: 40px;
+}
+
+.image2 {
+  position: absolute;
+  width: 80px;
+  z-index: 100;
+  bottom: 70%;
+  left: 10px;
+}
+
+.djname {
+  color: #282b32;
+  padding-bottom: 20%;
+}
+
+.featureddjs button {
+  width: 100%;
+  color: #3b3e45;
+  border-radius: 10px;
+  border: 1px solid #404040;
+}
+
+.buttonitems {
+  display: flex;
+  justify-content: center;
+}
+
+.djdescription1 {
+  color: #ec5242;
+  font-style: italic;
+  padding-bottom: 20%;
+}
+
+.djdescrition2 {
+  color: #3b3e45;
+}
+
+.djcontent,
+.dja {
+  margin-bottom: 20%;
+}
+
+.aboutpage {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.aboutpage h3 {
+  color: rgb(92.5%, 32.2%, 25.9%);
+}
+
+.aboutpage h2 {
+  font-weight: 100;
+  color: #ec5242;
+  padding-top: 15%;
+  margin-bottom: 0;
+}
+
+.concludes {
+  padding-bottom: 80%;
+}
+
+.logo2 img {
+  width: 30%;
+}
+
+.festivalb {
+  background-image: url(./Images/pageimages/2021.jpg);
+  background-size: cover;
+  padding: 30%;
+  margin-top: 20%;
+  position: relative;
+}
+
+.festivala {
+  background-image: url(./Images/pageimages/2020.jpg);
+  background-size: cover;
+  padding: 30%;
+  position: relative;
+  color: #fff;
+}
+
+.festivalb {
+  color: #fff;
+}
+
+.festivaloverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(25.1%, 25.1%, 25.1%, 90%);
+}
+
+.aboutpage ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+a {
+  color: #282b32;
+  font-weight: bold;
+}
+
+
+.contactme{
+
+    color: #3b3e45;
+}
+
+.footer{
+    background-color: #282b32;
+}
+
+
+@media (min-width:768px) {
+    .navbars{
+        display: none;
+    }
+    
+}
