@@ -260,7 +260,7 @@ header img {
 }
 
 .concludes {
-  padding-bottom: 80%;
+  padding-bottom: 10%;
 }
 
 .logo2 img {
@@ -338,8 +338,45 @@ a {
   color: #282b32;
 }
 
+.deskyimage{
+
+  display: none;
+
+}
+
 .brainsdescription {
   color: #3b3e45;
+}
+
+.brands img {
+  margin-top: 50px;
+
+  width: 20%;
+  background-size: cover;
+}
+
+.closing{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+}
+
+.closing img{
+  width: 10%;
+  background-color: #fff;
+  margin-right: auto;
+}
+
+.closing p{
+  font-family: mjaybold;
+  width:80%;
+}
+
+
+.brands img{
+  width: 100%;
+
+margin-top: 0;
 }
 
 @media (min-width: 768px) {
@@ -373,6 +410,10 @@ a {
     font-family: mjaybold;
     font-size: 30px;
   }
+
+.deskyimage{
+  display: block;
+}
 
   .location {
     font-size: 20px;
@@ -438,7 +479,7 @@ a {
     display: block;
   }
 
-  .program{
+  .program {
     padding: 5% 15%;
   }
 
@@ -464,7 +505,7 @@ a {
     font-family: mjaynormal;
   }
 
-  .djcontent{
+  .djcontent {
     width: 50%;
   }
 
@@ -474,80 +515,84 @@ a {
     width: 95%;
   }
 
-  .djdescrition2{
+  .djdescrition2 {
     font-family: mjnormal;
 
     width: 95%;
   }
 
-  .djname{
+  .djname {
     padding-bottom: 5%;
     font-family: mjaybold;
   }
 
-  .grids{
+  .grids {
     display: flex;
     flex-wrap: wrap;
   }
-  .featureddjs{
+  .featureddjs {
     padding: 0 15%;
   }
 
-  .image2{
+  .image2 {
     bottom: 40%;
   }
 
-  .aboutpage h2{
+  .aboutpage h2 {
     font-family: mjaynormal;
   }
 
-  .aboutpage h3{
+  .aboutpage h3 {
     width: 45%;
-font-size: 40px;
+    font-size: 40px;
     margin: auto;
     font-family: mjaybold;
   }
 
-  .aboutpage .description{
+  .aboutpage .description {
     margin: auto;
   }
 
-  .aboutpage .contactme{
+  .aboutpage .contactme {
     font-family: mjaynormal;
   }
 
-  .email a{
+  .email a {
     font-family: mjaybold;
-color:#404040;
+    color: #404040;
   }
 
-  .brains{
+  .brains {
     font-family: mjaymedium;
     font-weight: 600;
   }
-  .brainsdescription{
+  .brainsdescription {
     font-family: mjaynormal;
   }
 
-
-  .logo2{
+  .logo2 {
     width: 40%;
     margin: auto;
   }
 
-  .festivals{
+  .festivals {
     display: flex;
     align-items: center;
     gap: 5%;
-
   }
-.festivals li{
+  .festivals li {
+    width: 50%;
+  }
 
-  width: 50%;
-}
+  .festivalb {
+    margin-top: 0;
+  }
 
-.festivalb{
-  margin-top:0 ;
-}
+  .mobilebrands{
+    display: none;
+  }
 
+  .closingimage{
+    margin-left: 2%;
+  }
 }
