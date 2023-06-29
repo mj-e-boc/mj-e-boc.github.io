@@ -542,6 +542,16 @@ margin-top: 0;
     font-family: mjaynormal;
   }
 
+  .aboutpage .description{
+    background-color: #fff;
+    border: 1px solid #3b3e45;
+    padding: 5%;
+    margin: 10% auto;
+    font-family: mjaynormal;
+  }
+
+
+
   .aboutpage h3 {
     width: 45%;
     font-size: 40px;
@@ -549,13 +559,19 @@ margin-top: 0;
     font-family: mjaybold;
   }
 
-  .aboutpage .description {
-    margin: auto;
-  }
+ 
 
   .aboutpage .contactme {
     font-family: mjaynormal;
+    border-top: 1px solid #404040;
+margin-left: 0;
+margin-top: 30px;
+padding-top: 5%;
+
   }
+
+
+
 
   .email a {
     font-family: mjaybold;
