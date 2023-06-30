@@ -22,7 +22,7 @@
 
 # 📖 [Amapiano_Festival] <a name="about-project"></a>
 
-[Ronald Portfolio is a showcase of skills and my knowledge of tech languages]
+[Amapiano festival is an Afro music festival with a theme of amapiano music originally from South Africa]
 
 **[Amapiano_Festival]** is a promotional website for an Amapiano music festival.
 
