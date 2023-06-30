@@ -1,7 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(mjay.ttf);
+}
+
+@font-face {
+  font-family: mjaybold;
+  src: url(mjayheavvy.ttf);
+}
+
+@font-face {
+  font-family: mjayitalic;
+  src: url(mjayitalic.ttf);
+}
+
+@font-face {
+  font-family: mjaynormal;
+  src: url(mjaynormal.ttf);
+}
+.desktopnav {
+  display: none;
 }
 
 * ul {
@@ -10,17 +32,47 @@ body {
 
 /* front page */
 
+.navbars {
+  z-index: 100000;
+}
+
 header {
   display: flex;
   align-items: center;
   position: fixed;
+  top: 0;
   z-index: 1;
   background-image: url(./Images/pageimages/international.jpg);
   background-size: 80%;
-  z-index: 9999;
+  z-index: 100;
   width: 100vw;
 }
 
+.mobilemenu {
+  background-color: rgb(25.1%, 25.1%, 25.1%, 90%);
+  z-index: 250;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  display: none;
+}
+
+.mobilemenu ul {
+  padding-top: 10%;
+  padding-left: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobilemenu a {
+  color: #fff;
+  margin-bottom: 20%;
+  font-size: 15px;
+}
 nav {
   margin-left: 8%;
 }
@@ -30,16 +82,26 @@ header img {
   margin-left: 30%;
 }
 
+.xbutton img {
+  width: 4%;
+  margin-left: 8%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
 .navbars {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  z-index: 9999;
+  cursor: pointer;
 }
 
 .bar {
   width: 30px;
   height: 4px;
   background-color: #404040;
+  z-index: 20000;
 }
 
 .main {
@@ -55,6 +117,10 @@ header img {
   color: #ec5242;
   padding-top: 15%;
   margin-bottom: 0;
+}
+
+.seeschedule {
+  display: none;
 }
 
 .main h2 {
@@ -100,6 +166,8 @@ header img {
 .program h2 {
   color: #fff;
   text-align: center;
+  font-family: mjaybold;
+  padding-bottom: 5%;
 }
 
 .imageicon {
@@ -127,6 +195,10 @@ header img {
   color: #fff;
 }
 
+.hamburger {
+  z-index: 1000;
+}
+
 .program button {
   text-align: center;
   padding: 8%;
@@ -149,6 +221,9 @@ header img {
 
 .featureddjs h2 {
   color: #282b32;
+  margin: 10% auto;
+  text-align: center;
+  font-family: mjaybold;
 }
 
 .djimage {
@@ -178,7 +253,7 @@ header img {
 .image2 {
   position: absolute;
   width: 80px;
-  z-index: 100;
+  z-index: 50;
   bottom: 70%;
   left: 10px;
 }
@@ -188,11 +263,13 @@ header img {
   padding-bottom: 20%;
 }
 
+
 .featureddjs button {
   width: 100%;
   color: #3b3e45;
   border-radius: 10px;
-  border: 1px solid #404040;
+  border: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+  margin-bottom: 30%;
 }
 
 .buttonitems {
@@ -221,19 +298,19 @@ header img {
   text-align: center;
 }
 
-.aboutpage h3 {
+.darkbackground h3 {
   color: rgb(92.5%, 32.2%, 25.9%);
 }
 
-.aboutpage h2 {
+.darkbackground h2 {
   font-weight: 100;
   color: #ec5242;
-  padding-top: 15%;
+  padding-top: 10%;
   margin-bottom: 0;
 }
 
 .concludes {
-  padding-bottom: 80%;
+  padding-bottom: 10%;
 }
 
 .logo2 img {
@@ -256,6 +333,12 @@ header img {
   color: #fff;
 }
 
+.festivalyear {
+  padding-top: 10%;
+  font-family: mjaybold;
+  font-size: 20px;
+}
+
 .festivalb {
   color: #fff;
 }
@@ -274,26 +357,338 @@ header img {
   padding-left: 0;
 }
 
-
 a {
   color: #282b32;
   font-weight: bold;
 }
 
+.contactme {
+  color: #3b3e45;
+}
 
-.contactme{
+.footer {
+  background-color: #282b32;
+}
 
+.desktopnav ul {
+  display: flex;
+  gap: 8%;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+.desktopnav,
+li,
+a {
+  text-decoration: none;
+  font-family: mjaynormal;
+  font-size: 13px;
+}
+
+.desktopnav ul :nth-child(6) {
+  margin-right: 380px;
+}
+
+
+
+.brains {
+  padding-top: 10%;
+  color: #282b32;
+}
+
+
+.deskyimage {
+  display: none;
+}
+
+.brainsdescription {
+  color: #3b3e45;
+}
+
+.brands img {
+  margin-top: 50px;
+
+  width: 20%;
+  background-size: cover;
+}
+
+.closing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closing img {
+  width: 10%;
+  background-color: #fff;
+  margin-right: auto;
+}
+
+.closing p {
+  font-family: mjaybold;
+  width: 80%;
+}
+
+.here {
+  font-family: mjaymedium;
+  color: #282b32;
+  font-weight: 800;
+  padding-top: 5%;
+  border-top: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+
+  margin-top: 5%;
+}
+.pabout {
+  font-family: mjaynormal;
+  padding-bottom: 5%;
+}
+
+.brands img {
+  width: 100%;
+
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .viewmoredjs {
+    display: none;
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+
+  .logo {
+    margin-right: auto;
+    margin-left: 100px;
+    width: 90%;
+  }
+
+  .description {
+    width: 60%;
+    font-family: mjaynormal;
     color: #3b3e45;
+    font-size: 17px;
+  }
+
+  .logo img {
+    width: 20%;
+  }
+
+  .date {
+    font-family: mjaybold;
+    font-size: 30px;
+  }
+
+  .deskyimage {
+    display: block;
+  }
+
+  .location {
+    font-size: 20px;
+  }
+
+  .navbars {
+    display: none;
+  }
+
+  .main {
+    padding: 0 15% 20% 15%;
+  }
+
+  .mainul {
+    width: 93%;
+    text-align: center;
+  }
+
+
+  .programactivities .main {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    background: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .paragraph {
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+  }
+
+  .imageicon {
+    margin: auto;
+  }
+
+  .main h2 {
+    font-family: mjaybold;
+    font-size: 70px;
+  }
+
+  .mainul {
+    display: block;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .main h1 {
+    font-family: mjaynormal;
+    font-size: 30px;
+    color: rgb(92.5%, 32.2%, 25.9%, 90%);
+    padding-top: 30%;
+  }
+
+  .main li {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .desktopnav {
+    display: block;
+  }
+
+  .program {
+    padding: 5% 15%;
+  }
+
+  .program h2 {
+    font-family: mjaynormal;
+  }
+
+  .program button {
+    display: none;
+  }
+
+  .seeschedule {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .correctingbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    cursor: pointer;
+    font-family: mjaynormal;
+  }
+
+  .djcontent {
+    width: 50%;
+  }
+
+  .djdescription1 {
+    padding-bottom: 5%;
+    font-family: mjitalic;
+    width: 95%;
+  }
+
+  .djdescrition2 {
+    font-family: mjnormal;
+
+    width: 95%;
+  }
+
+
+  .djname {
+    padding-bottom: 5%;
+    font-family: mjaybold;
+  }
+
+  .grids {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .featureddjs {
+    padding: 0 15%;
+  }
+
+  .image2 {
+    bottom: 40%;
+  }
+
+  .aboutpage h2 {
+    font-family: mjaynormal;
+  }
+
+  .darkbackground .description {
+    background-color: #fff;
+    border: 1px solid rgb(25.1%, 25.1%, 25.1%, 10%);
+    padding: 5%;
+    margin: 10% auto;
+    font-family: mjaynormal;
+  }
+
+  .darkbackground h3 {
+    width: 45%;
+    font-size: 40px;
+    margin: auto;
+    font-family: mjaybold;
+  }
+
+  .darkbackground .contactme {
+    font-family: mjaynormal;
+    border-top: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+    margin-left: 0;
+    margin-top: 30px;
+    padding-top: 5%;
+  }
+
+  .email a {
+    font-family: mjaybold;
+    color: #404040;
+  }
+
+  .brains {
+    font-family: mjaymedium;
+    font-weight: 600;
+  }
+  .brainsdescription {
+    font-family: mjaynormal;
+  }
+
+  .logo2 {
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+  }
+
+  .festivaldescription {
+    font-size: 15px;
+    font-family: mjaynormal;
+  }
+
+  .festivals {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+  .festivals li {
+    width: 50%;
+  }
+
+  .festivalb {
+    margin-top: 0;
+  }
+
+  .mobilebrands {
+    display: none;
+  }
+
+  .closingimage {
+    margin-left: 2%;
+  }
 }
 
-.footer{
-    background-color: #282b32;
-}
-
-
-@media (min-width:768px) {
-    .navbars{
-        display: none;
-    }
-    
+.darkbackground {
+  background-color: rgb(25.1%, 25.1%, 25.1%, 5%);
+  padding: 5% 0;
+  text-align: center;
 }
