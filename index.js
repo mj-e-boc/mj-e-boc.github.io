@@ -2,9 +2,10 @@ const djContainer = document.querySelector(".grids");
 const hamburger = document.querySelector('.navbars');
 const mobileMenu = document.querySelector('.mobilemenu');
 const mobileMenuItems = document.querySelectorAll('.item');
-const bars = document.querySelectorAll('.bar');
+const bars = document.querySelector('.navbars');
 const viewMore = document.querySelector(".featureddjs button");
 const closeButton = document.querySelector('.xbutton');
+
 
 
 mobileMenuItems.forEach((item)=>{
@@ -16,13 +17,18 @@ mobileMenuItems.forEach((item)=>{
 hamburger.addEventListener('click',()=>{
     mobileMenu.style.display = 'block'; 
    
-       bars.style.background = 'red'
+       bars.style.display = 'none';
+       document.body.style.overflow ='hidden'
+
 
 })
 
 
 closeButton.addEventListener('click',()=>{
     mobileMenu.style.display ='none';
+    bars.style.display = 'flex';
+    overflow='hidden';
+    document.body.style.overflow = "scroll";
 })
 
 
@@ -114,3 +120,4 @@ djContainer.appendChild(djInfor);
    });
 };
 createFeaturedDjs(); 
+

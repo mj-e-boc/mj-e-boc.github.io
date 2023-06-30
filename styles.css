@@ -71,6 +71,7 @@ header {
 .mobilemenu a {
   color: #fff;
   margin-bottom: 20%;
+  font-size: 15px;
 }
 nav {
   margin-left: 8%;
@@ -81,17 +82,19 @@ header img {
   margin-left: 30%;
 }
 
-.xbutton img{
+.xbutton img {
   width: 4%;
   margin-left: 8%;
   margin-top: 5%;
+  cursor: pointer;
 }
 
 .navbars {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  z-index:9999;
+  z-index: 9999;
+  cursor: pointer;
 }
 
 .bar {
@@ -251,7 +254,7 @@ header img {
   position: absolute;
   width: 80px;
   z-index: 50;
-  bottom: 65%;
+  bottom: 70%;
   left: 10px;
 }
 
@@ -260,15 +263,13 @@ header img {
   padding-bottom: 20%;
 }
 
-.viewmoredjs:active {
-  display: block;
-}
 
 .featureddjs button {
   width: 100%;
   color: #3b3e45;
   border-radius: 10px;
   border: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+  margin-bottom: 30%;
 }
 
 .buttonitems {
@@ -388,10 +389,13 @@ a {
   margin-right: 380px;
 }
 
+
+
 .brains {
   padding-top: 10%;
   color: #282b32;
 }
+
 
 .deskyimage {
   display: none;
@@ -424,7 +428,6 @@ a {
   font-family: mjaybold;
   width: 80%;
 }
-
 
 .here {
   font-family: mjaymedium;
@@ -503,6 +506,7 @@ a {
     text-align: center;
   }
 
+
   .programactivities .main {
     display: flex;
     align-items: center;
@@ -556,7 +560,6 @@ a {
 
   .program h2 {
     font-family: mjaynormal;
-    
   }
 
   .program button {
@@ -593,6 +596,7 @@ a {
     width: 95%;
   }
 
+
   .djname {
     padding-bottom: 5%;
     font-family: mjaybold;
@@ -613,7 +617,6 @@ a {
   .aboutpage h2 {
     font-family: mjaynormal;
   }
-
 
   .darkbackground .description {
     background-color: #fff;
@@ -641,7 +644,6 @@ a {
   .email a {
     font-family: mjaybold;
     color: #404040;
-
   }
 
   .brains {
