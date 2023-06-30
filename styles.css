@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Laton', sans-serif;
 }
 
 @font-face {
@@ -9,7 +10,7 @@ body {
 }
 
 @font-face {
-  font-family: mjaybold;
+  font-family: sans-serif, mjaybold;
   src: url(mjayheavvy.ttf);
 }
 
@@ -19,9 +20,10 @@ body {
 }
 
 @font-face {
-  font-family: mjaynormal;
+  font-family: sans-serif, mjaynormal;
   src: url(mjaynormal.ttf);
 }
+
 .desktopnav {
   display: none;
 }
@@ -33,6 +35,10 @@ body {
 /* front page */
 
 .navbars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
   z-index: 100000;
 }
 
@@ -41,11 +47,14 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 1;
   background-image: url(./Images/pageimages/international.jpg);
   background-size: 80%;
   z-index: 100;
   width: 100vw;
+}
+
+a {
+  color: #282b32;
 }
 
 .mobilemenu {
@@ -68,11 +77,20 @@ header {
   gap: 20px;
 }
 
+.desktopnav,
+li,
+a {
+  text-decoration: none;
+  font-family: sans-serif, mjaynormal;
+  font-size: 13px;
+}
+
 .mobilemenu a {
   color: #fff;
   margin-bottom: 20%;
   font-size: 15px;
 }
+
 nav {
   margin-left: 8%;
 }
@@ -86,14 +104,6 @@ header img {
   width: 4%;
   margin-left: 8%;
   margin-top: 5%;
-  cursor: pointer;
-}
-
-.navbars {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  z-index: 9999;
   cursor: pointer;
 }
 
@@ -123,18 +133,23 @@ header img {
   display: none;
 }
 
-.main h2 {
+/* .main h2 {
+
+} */
+
+.clipthis {
   color: rgb(92.5%, 32.2%, 25.9%, 60%);
   text-align: left;
   background-image: url(./Images/pageimages/textbackground.jpg);
-  background-clip: text;
   background-size: cover;
+  background-clip: inherit;
   -webkit-background-clip: text;
   width: 40%;
   font-weight: bolder;
   margin-top: 0;
-  padding-top: none;
+  padding-top: 0;
 }
+
 .description {
   color: rgb(25.1%, 25.1%, 25.1%, 60%);
   padding: 10% 0;
@@ -166,7 +181,7 @@ header img {
 .program h2 {
   color: #fff;
   text-align: center;
-  font-family: mjaybold;
+  font-family: sans-serif, mjaybold;
   padding-bottom: 5%;
 }
 
@@ -223,11 +238,7 @@ header img {
   color: #282b32;
   margin: 10% auto;
   text-align: center;
-  font-family: mjaybold;
-}
-
-.djimage {
-  padding-right: 15%;
+  font-family: sans-serif, mjaybold;
 }
 
 .featureddjs ul {
@@ -240,13 +251,14 @@ header img {
 
 .djimage {
   position: relative;
+  padding-right: 15%;
 }
 
 .image1 {
   width: 40px;
   z-index: -10;
   top: -30px;
-  left: -100;
+  left: -100px;
   height: 40px;
 }
 
@@ -254,7 +266,7 @@ header img {
   position: absolute;
   width: 80px;
   z-index: 50;
-  bottom: 70%;
+  bottom: 61%;
   left: 10px;
 }
 
@@ -262,7 +274,6 @@ header img {
   color: #282b32;
   padding-bottom: 20%;
 }
-
 
 .featureddjs button {
   width: 100%;
@@ -323,6 +334,7 @@ header img {
   padding: 30%;
   margin-top: 20%;
   position: relative;
+  color: #fff;
 }
 
 .festivala {
@@ -335,12 +347,8 @@ header img {
 
 .festivalyear {
   padding-top: 10%;
-  font-family: mjaybold;
+  font-family: sans-serif, mjaybold;
   font-size: 20px;
-}
-
-.festivalb {
-  color: #fff;
 }
 
 .festivaloverlay {
@@ -355,11 +363,6 @@ header img {
 .aboutpage ul {
   margin-left: 0;
   padding-left: 0;
-}
-
-a {
-  color: #282b32;
-  font-weight: bold;
 }
 
 .contactme {
@@ -379,23 +382,22 @@ a {
 
 .desktopnav,
 li,
-a {
-  text-decoration: none;
-  font-family: mjaynormal;
-  font-size: 13px;
+a :hover {
+  color: #ec5242;
+}
+
+.hompage {
+  display: none;
 }
 
 .desktopnav ul :nth-child(6) {
   margin-right: 380px;
 }
 
-
-
 .brains {
   padding-top: 10%;
   color: #282b32;
 }
-
 
 .deskyimage {
   display: none;
@@ -403,13 +405,6 @@ a {
 
 .brainsdescription {
   color: #3b3e45;
-}
-
-.brands img {
-  margin-top: 50px;
-
-  width: 20%;
-  background-size: cover;
 }
 
 .closing {
@@ -425,27 +420,26 @@ a {
 }
 
 .closing p {
-  font-family: mjaybold;
+  font-family: sans-serif, mjaybold;
   width: 80%;
 }
 
 .here {
-  font-family: mjaymedium;
+  font-family: sans-serif, mjaymedium;
   color: #282b32;
   font-weight: 800;
   padding-top: 5%;
   border-top: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
-
   margin-top: 5%;
 }
+
 .pabout {
-  font-family: mjaynormal;
+  font-family: sans-serif, mjaynormal;
   padding-bottom: 5%;
 }
 
 .brands img {
   width: 100%;
-
   margin-top: 0;
 }
 
@@ -471,7 +465,7 @@ a {
 
   .description {
     width: 60%;
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
     color: #3b3e45;
     font-size: 17px;
   }
@@ -481,7 +475,7 @@ a {
   }
 
   .date {
-    font-family: mjaybold;
+    font-family: sans-serif, mjaybold;
     font-size: 30px;
   }
 
@@ -502,10 +496,12 @@ a {
   }
 
   .mainul {
+    display: block;
+    margin-right: 0;
+    padding-right: 0;
     width: 93%;
     text-align: center;
   }
-
 
   .programactivities .main {
     display: flex;
@@ -514,7 +510,6 @@ a {
     padding: 0;
     background: none;
     justify-content: flex-end;
-    align-items: center;
   }
 
   .paragraph {
@@ -528,18 +523,12 @@ a {
   }
 
   .main h2 {
-    font-family: mjaybold;
+    font-family: sans-serif, mjaybold;
     font-size: 70px;
   }
 
-  .mainul {
-    display: block;
-    margin-right: 0;
-    padding-right: 0;
-  }
-
   .main h1 {
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
     font-size: 30px;
     color: rgb(92.5%, 32.2%, 25.9%, 90%);
     padding-top: 30%;
@@ -559,7 +548,7 @@ a {
   }
 
   .program h2 {
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
   }
 
   .program button {
@@ -577,7 +566,7 @@ a {
     justify-content: center;
     margin-top: 10%;
     cursor: pointer;
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
   }
 
   .djcontent {
@@ -586,36 +575,35 @@ a {
 
   .djdescription1 {
     padding-bottom: 5%;
-    font-family: mjitalic;
+    font-family: sans-serif, mjitalic;
     width: 95%;
   }
 
   .djdescrition2 {
-    font-family: mjnormal;
-
+    font-family: sans-serif, mjnormal;
     width: 95%;
   }
 
-
   .djname {
     padding-bottom: 5%;
-    font-family: mjaybold;
+    font-family: sans-serif, mjaybold;
   }
 
   .grids {
     display: flex;
     flex-wrap: wrap;
   }
+
   .featureddjs {
     padding: 0 15%;
   }
 
   .image2 {
-    bottom: 40%;
+    bottom: 33%;
   }
 
   .aboutpage h2 {
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
   }
 
   .darkbackground .description {
@@ -623,18 +611,18 @@ a {
     border: 1px solid rgb(25.1%, 25.1%, 25.1%, 10%);
     padding: 5%;
     margin: 10% auto;
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
   }
 
   .darkbackground h3 {
     width: 45%;
     font-size: 40px;
     margin: auto;
-    font-family: mjaybold;
+    font-family: sans-serif, mjaybold;
   }
 
   .darkbackground .contactme {
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
     border-top: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
     margin-left: 0;
     margin-top: 30px;
@@ -642,16 +630,17 @@ a {
   }
 
   .email a {
-    font-family: mjaybold;
+    font-family: sans-serif, mjaybold;
     color: #404040;
   }
 
   .brains {
-    font-family: mjaymedium;
+    font-family: sans-serif, mjaymedium;
     font-weight: 600;
   }
+
   .brainsdescription {
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
   }
 
   .logo2 {
@@ -662,7 +651,7 @@ a {
 
   .festivaldescription {
     font-size: 15px;
-    font-family: mjaynormal;
+    font-family: sans-serif, mjaynormal;
   }
 
   .festivals {
@@ -670,6 +659,7 @@ a {
     align-items: center;
     gap: 5%;
   }
+
   .festivals li {
     width: 50%;
   }
@@ -688,7 +678,16 @@ a {
 }
 
 .darkbackground {
-  background-color: rgb(25.1%, 25.1%, 25.1%, 5%);
+  background-color: rgb(25.1%, 25.1%, 25.1%, 20%);
   padding: 5% 0;
   text-align: center;
+}
+
+a:hover {
+  color: #ec5242;
+}
+
+.lastitem {
+  border: 4px solid #ec5242;
+  padding: 12%;
 }

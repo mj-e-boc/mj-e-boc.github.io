@@ -1,97 +1,89 @@
-const djContainer = document.querySelector(".grids");
+const djContainer = document.querySelector('.grids');
 const hamburger = document.querySelector('.navbars');
 const mobileMenu = document.querySelector('.mobilemenu');
 const mobileMenuItems = document.querySelectorAll('.item');
 const bars = document.querySelector('.navbars');
-const viewMore = document.querySelector(".featureddjs button");
+
 const closeButton = document.querySelector('.xbutton');
 
-
-
-mobileMenuItems.forEach((item)=>{
-    item.addEventListener('click',()=>{
+mobileMenuItems.forEach((item) => {
+  item.addEventListener('click', () => {
     mobileMenu.style.display = 'none';
-    });
-})
+  });
+});
 
-hamburger.addEventListener('click',()=>{
-    mobileMenu.style.display = 'block'; 
-   
-       bars.style.display = 'none';
-       document.body.style.overflow ='hidden'
+hamburger.addEventListener('click', () => {
+  mobileMenu.style.display = 'block';
 
+  bars.style.display = 'none';
+  document.querySelector('body').style.overflow = 'hidden';
+});
 
-})
-
-
-closeButton.addEventListener('click',()=>{
-    mobileMenu.style.display ='none';
-    bars.style.display = 'flex';
-    overflow='hidden';
-    document.body.style.overflow = "scroll";
-})
-
+closeButton.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+  bars.style.display = 'flex';
+  document.querySelector('body').style.overflow = 'scroll';
+});
 
 const djData = [
   {
-    djImage: "./Images/pageimages/kabza.png",
-    djName: "Kabza De Small",
+    djImage: './Images/pageimages/kabza.png',
+    djName: 'Kabza De Small',
     description1:
-      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
-    description2:
-      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+      'Termed the godfather of amapiano, having pioneered the genre back in 2018, Kabza is famous for producing hits ever now and then',
+    description2: 'Kabza De Small is also famous for his great djing skill',
   },
 
   {
-    djImage: "./Images/pageimages/maphorisa.png",
-    djName: "Maphorisa",
+    djImage: './Images/pageimages/maphorisa.png',
+    djName: 'Dj Maphorisa',
     description1:
-      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+      'One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance',
     description2:
-      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+      'Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular',
   },
 
   {
-    djImage: "./Images/pageimages/maphorisa.png",
-    djName: "Kabza De Small",
+    djImage: './Images/pageimages/daliwonga.png',
+    djName: 'Daliwonga',
     description1:
-      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+      'Daliwonga is a 21 year old South African Amapiano artist from the Eastern Cape. ',
     description2:
-      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+      'He is known for his unique contributions to the Amapiano music genre and has gained recognition from fans all over the world',
   },
 
   {
-    djImage: "./Images/pageimages/maphorisa.png",
-    djName: "Kabza De Small",
+    djImage: './Images/pageimages/zain sa.png',
+    djName: 'Zain Sa',
     description1:
-      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+      'Won the hearts of a lot with his hit singles in 2018 and the unique drum in his music',
     description2:
-      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+      'Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular',
   },
   {
-    djImage: "./Images/pageimages/maphorisa.png",
-    djName: "Kabza De Small",
+    djImage: './Images/pageimages/finaltrial.png',
+    djName: 'M jay',
     description1:
-      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+      'Created this page, plays in many clubs in Poland varying genres of music for all groups of people',
     description2:
-      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+      'Popular for his patience and great crow control in clubs in plays in, has many at heart.',
   },
 
   {
-    djImage: "./Images/pageimages/maphorisa.png",
-    djName: "Kabza De Small",
+    djImage: './Images/pageimages/musakeys.png',
+    djName: 'Musa Keys',
     description1:
-      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+      " Musa Keys was born on May 9, 1990 in Giyani in the Limpopo Province's northeastern area. He hails from Polokwane, where he first started his music career",
     description2:
-      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+      'Musa Keys is popular known for his chart-topping singles Samarian Boy and Vula Mlomo',
   },
 ];
 
-const createFeaturedDjs=()=>{
-   djData.map((dj)=>{
-const djInfor = document.createElement('li');
-djInfor.classList.add('djcontent')
-djInfor.innerHTML = `
+const createFeaturedDjs = () => {
+  djData.map((dj) => {
+    const djInfor = document.createElement('li');
+    djInfor.classList.add('djcontent');
+    djInfor.innerHTML = `
 <div class="djimage">
             <img
               class="image1"
@@ -114,10 +106,10 @@ djInfor.innerHTML = `
             </li>
           </ul>
         </li>
+    
 
 `;
-djContainer.appendChild(djInfor);
-   });
+    return djContainer.appendChild(djInfor);
+  });
 };
-createFeaturedDjs(); 
-
+createFeaturedDjs();
