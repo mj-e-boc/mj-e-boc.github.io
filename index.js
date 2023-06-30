@@ -2,12 +2,9 @@ const djContainer = document.querySelector(".grids");
 const hamburger = document.querySelector('.navbars');
 const mobileMenu = document.querySelector('.mobilemenu');
 const mobileMenuItems = document.querySelectorAll('.item');
-const bar = document.querySelectorAll('.bar');
+const bars = document.querySelectorAll('.bar');
 const viewMore = document.querySelector(".featureddjs button");
-
-
-
-
+const closeButton = document.querySelector('.xbutton');
 
 
 mobileMenuItems.forEach((item)=>{
@@ -18,9 +15,14 @@ mobileMenuItems.forEach((item)=>{
 
 hamburger.addEventListener('click',()=>{
     mobileMenu.style.display = 'block'; 
-    bar.forEach((r)=>{
-        r.style.backgroundcolor = 'red'
-    })
+   
+       bars.style.background = 'red'
+
+})
+
+
+closeButton.addEventListener('click',()=>{
+    mobileMenu.style.display ='none';
 })
 
 

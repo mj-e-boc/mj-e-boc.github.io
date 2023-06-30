@@ -32,10 +32,9 @@ body {
 
 /* front page */
 
- .navbars {
-    z-index: 100000;
-  }
-
+.navbars {
+  z-index: 100000;
+}
 
 header {
   display: flex;
@@ -45,33 +44,32 @@ header {
   z-index: 1;
   background-image: url(./Images/pageimages/international.jpg);
   background-size: 80%;
-  z-index: 9999;
+  z-index: 100;
   width: 100vw;
 }
 
-.mobilemenu{
+.mobilemenu {
   background-color: rgb(25.1%, 25.1%, 25.1%, 90%);
-  z-index: 9999;
+  z-index: 250;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
-left: 0;
+  left: 0;
   backdrop-filter: blur(3px);
-display: none;
+  display: none;
 }
 
-.mobilemenu ul{
+.mobilemenu ul {
   padding-top: 10%;
   padding-left: 45%;
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 }
 
-
-.mobilemenu a{
-  color:#fff;
+.mobilemenu a {
+  color: #fff;
   margin-bottom: 20%;
 }
 nav {
@@ -83,19 +81,25 @@ header img {
   margin-left: 30%;
 }
 
+.xbutton img{
+  width: 4%;
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
 .navbars {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  z-index:9999;
 }
 
 .bar {
   width: 30px;
   height: 4px;
   background-color: #404040;
+  z-index: 20000;
 }
-
-
 
 .main {
   background-image: url(./Images/pageimages/international.jpg);
@@ -152,13 +156,15 @@ header img {
 
 .programactivities img {
   margin: 0;
-  objectm-fit: cover;
+  object-fit: cover;
   width: 60%;
 }
 
 .program h2 {
   color: #fff;
   text-align: center;
+  font-family: mjaybold;
+  padding-bottom: 5%;
 }
 
 .imageicon {
@@ -186,7 +192,7 @@ header img {
   color: #fff;
 }
 
-.hamburger{
+.hamburger {
   z-index: 1000;
 }
 
@@ -212,6 +218,9 @@ header img {
 
 .featureddjs h2 {
   color: #282b32;
+  margin: 10% auto;
+  text-align: center;
+  font-family: mjaybold;
 }
 
 .djimage {
@@ -241,7 +250,7 @@ header img {
 .image2 {
   position: absolute;
   width: 80px;
-  z-index: 100;
+  z-index: 50;
   bottom: 65%;
   left: 10px;
 }
@@ -251,7 +260,7 @@ header img {
   padding-bottom: 20%;
 }
 
-.viewmoredjs:active{
+.viewmoredjs:active {
   display: block;
 }
 
@@ -288,14 +297,14 @@ header img {
   text-align: center;
 }
 
-.aboutpage h3 {
+.darkbackground h3 {
   color: rgb(92.5%, 32.2%, 25.9%);
 }
 
-.aboutpage h2 {
+.darkbackground h2 {
   font-weight: 100;
   color: #ec5242;
-  padding-top: 15%;
+  padding-top: 10%;
   margin-bottom: 0;
 }
 
@@ -321,6 +330,12 @@ header img {
   padding: 30%;
   position: relative;
   color: #fff;
+}
+
+.festivalyear {
+  padding-top: 10%;
+  font-family: mjaybold;
+  font-size: 20px;
 }
 
 .festivalb {
@@ -378,10 +393,8 @@ a {
   color: #282b32;
 }
 
-.deskyimage{
-
+.deskyimage {
   display: none;
-
 }
 
 .brainsdescription {
@@ -395,36 +408,42 @@ a {
   background-size: cover;
 }
 
-.closing{
+.closing {
   display: flex;
   align-items: center;
- justify-content: center;
+  justify-content: center;
 }
 
-.closing img{
+.closing img {
   width: 10%;
   background-color: #fff;
   margin-right: auto;
 }
 
-.concludes h4{
-  font-family: mjaynormal;
-}
-
-.closing p{
+.closing p {
   font-family: mjaybold;
-  width:80%;
+  width: 80%;
 }
 
-.pabout{
+
+.here {
+  font-family: mjaymedium;
+  color: #282b32;
+  font-weight: 800;
+  padding-top: 5%;
+  border-top: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+
+  margin-top: 5%;
+}
+.pabout {
   font-family: mjaynormal;
+  padding-bottom: 5%;
 }
 
-
-.brands img{
+.brands img {
   width: 100%;
 
-margin-top: 0;
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
@@ -433,10 +452,9 @@ margin-top: 0;
     padding: 0;
   }
 
-.viewmoredjs{
-  display: none;
-}
-
+  .viewmoredjs {
+    display: none;
+  }
 
   header {
     justify-content: flex-end;
@@ -452,7 +470,7 @@ margin-top: 0;
     width: 60%;
     font-family: mjaynormal;
     color: #3b3e45;
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .logo img {
@@ -464,9 +482,9 @@ margin-top: 0;
     font-size: 30px;
   }
 
-.deskyimage{
-  display: block;
-}
+  .deskyimage {
+    display: block;
+  }
 
   .location {
     font-size: 20px;
@@ -538,6 +556,7 @@ margin-top: 0;
 
   .program h2 {
     font-family: mjaynormal;
+    
   }
 
   .program button {
@@ -595,41 +614,34 @@ margin-top: 0;
     font-family: mjaynormal;
   }
 
-  .aboutpage .description{
+
+  .darkbackground .description {
     background-color: #fff;
-    border: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+    border: 1px solid rgb(25.1%, 25.1%, 25.1%, 10%);
     padding: 5%;
     margin: 10% auto;
     font-family: mjaynormal;
   }
 
-
-
-  .aboutpage h3 {
+  .darkbackground h3 {
     width: 45%;
     font-size: 40px;
     margin: auto;
     font-family: mjaybold;
   }
 
- 
-
-
-
-  .aboutpage .contactme {
+  .darkbackground .contactme {
     font-family: mjaynormal;
     border-top: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
-margin-left: 0;
-margin-top: 30px;
-padding-top: 5%;
-
+    margin-left: 0;
+    margin-top: 30px;
+    padding-top: 5%;
   }
-
-
 
   .email a {
     font-family: mjaybold;
     color: #404040;
+
   }
 
   .brains {
@@ -641,8 +653,14 @@ padding-top: 5%;
   }
 
   .logo2 {
-    width: 40%;
+    width: 70%;
     margin: auto;
+    border: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
+  }
+
+  .festivaldescription {
+    font-size: 15px;
+    font-family: mjaynormal;
   }
 
   .festivals {
@@ -658,11 +676,17 @@ padding-top: 5%;
     margin-top: 0;
   }
 
-  .mobilebrands{
+  .mobilebrands {
     display: none;
   }
 
-  .closingimage{
+  .closingimage {
     margin-left: 2%;
   }
+}
+
+.darkbackground {
+  background-color: rgb(25.1%, 25.1%, 25.1%, 5%);
+  padding: 5% 0;
+  text-align: center;
 }
