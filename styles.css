@@ -32,6 +32,11 @@ body {
 
 /* front page */
 
+ .navbars {
+    z-index: 100000;
+  }
+
+
 header {
   display: flex;
   align-items: center;
@@ -44,6 +49,31 @@ header {
   width: 100vw;
 }
 
+.mobilemenu{
+  background-color: rgb(25.1%, 25.1%, 25.1%, 90%);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+left: 0;
+  backdrop-filter: blur(3px);
+display: none;
+}
+
+.mobilemenu ul{
+  padding-top: 10%;
+  padding-left: 45%;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+
+.mobilemenu a{
+  color:#fff;
+  margin-bottom: 20%;
+}
 nav {
   margin-left: 8%;
 }
@@ -64,6 +94,8 @@ header img {
   height: 4px;
   background-color: #404040;
 }
+
+
 
 .main {
   background-image: url(./Images/pageimages/international.jpg);
@@ -120,7 +152,7 @@ header img {
 
 .programactivities img {
   margin: 0;
-  object-fit: cover;
+  objectm-fit: cover;
   width: 60%;
 }
 
@@ -152,6 +184,10 @@ header img {
 .paragraph {
   font-size: 12px;
   color: #fff;
+}
+
+.hamburger{
+  z-index: 1000;
 }
 
 .program button {
@@ -206,7 +242,7 @@ header img {
   position: absolute;
   width: 80px;
   z-index: 100;
-  bottom: 70%;
+  bottom: 65%;
   left: 10px;
 }
 
@@ -215,11 +251,15 @@ header img {
   padding-bottom: 20%;
 }
 
+.viewmoredjs:active{
+  display: block;
+}
+
 .featureddjs button {
   width: 100%;
   color: #3b3e45;
   border-radius: 10px;
-  border: 1px solid #404040;
+  border: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
 }
 
 .buttonitems {
@@ -367,9 +407,17 @@ a {
   margin-right: auto;
 }
 
+.concludes h4{
+  font-family: mjaynormal;
+}
+
 .closing p{
   font-family: mjaybold;
   width:80%;
+}
+
+.pabout{
+  font-family: mjaynormal;
 }
 
 
@@ -384,6 +432,11 @@ margin-top: 0;
     margin: 0;
     padding: 0;
   }
+
+.viewmoredjs{
+  display: none;
+}
+
 
   header {
     justify-content: flex-end;
@@ -544,7 +597,7 @@ margin-top: 0;
 
   .aboutpage .description{
     background-color: #fff;
-    border: 1px solid #3b3e45;
+    border: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
     padding: 5%;
     margin: 10% auto;
     font-family: mjaynormal;
@@ -561,15 +614,16 @@ margin-top: 0;
 
  
 
+
+
   .aboutpage .contactme {
     font-family: mjaynormal;
-    border-top: 1px solid #404040;
+    border-top: 1px solid rgb(25.1%, 25.1%, 25.1%, 20%);
 margin-left: 0;
 margin-top: 30px;
 padding-top: 5%;
 
   }
-
 
 
 

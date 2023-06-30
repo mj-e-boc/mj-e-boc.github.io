@@ -1,48 +1,82 @@
 const djContainer = document.querySelector(".grids");
+const hamburger = document.querySelector('.navbars');
+const mobileMenu = document.querySelector('.mobilemenu');
+const mobileMenuItems = document.querySelectorAll('.item');
+const bar = document.querySelectorAll('.bar');
+const viewMore = document.querySelector(".featureddjs button");
+
+
+
+
+
+
+mobileMenuItems.forEach((item)=>{
+    item.addEventListener('click',()=>{
+    mobileMenu.style.display = 'none';
+    });
+})
+
+hamburger.addEventListener('click',()=>{
+    mobileMenu.style.display = 'block'; 
+    bar.forEach((r)=>{
+        r.style.backgroundcolor = 'red'
+    })
+})
+
 
 const djData = [
+  {
+    djImage: "./Images/pageimages/kabza.png",
+    djName: "Kabza De Small",
+    description1:
+      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+    description2:
+      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+  },
 
-  {djImage: "Images/pageimages/djbackground.jpg",
-  djName: "Kabza De Small",
-  description1:
-    "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
-  description2:
-    "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular"},
+  {
+    djImage: "./Images/pageimages/maphorisa.png",
+    djName: "Maphorisa",
+    description1:
+      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+    description2:
+      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+  },
 
-  {djImage: "Images/pageimages/djbackground.jpg",
-  djName: "Kabza De Small",
-  description1:
-    "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
-  description2:
-    "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular"},
+  {
+    djImage: "./Images/pageimages/maphorisa.png",
+    djName: "Kabza De Small",
+    description1:
+      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+    description2:
+      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+  },
 
-  {djImage: "Images/pageimages/djbackground.jpg",
-  djName: "Kabza De Small",
-  description1:
-    "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
-  description2:
-    "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular"},
+  {
+    djImage: "./Images/pageimages/maphorisa.png",
+    djName: "Kabza De Small",
+    description1:
+      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+    description2:
+      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+  },
+  {
+    djImage: "./Images/pageimages/maphorisa.png",
+    djName: "Kabza De Small",
+    description1:
+      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+    description2:
+      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+  },
 
-  {djImage: "Images/pageimages/djbackground.jpg",
-  djName: "Kabza De Small",
-  description1:
-    "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
-  description2:
-    "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular"},
-
-  {djImage: "Images/pageimages/djbackground.jpg",
-  djName: "Kabza De Small",
-  description1:
-    "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
-  description2:
-    "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular"},
-
-  {djImage: "Images/pageimages/djbackground.jpg",
-  djName: "Kabza De Small",
-  description1:
-    "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
-  description2:
-    "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular"},
+  {
+    djImage: "./Images/pageimages/maphorisa.png",
+    djName: "Kabza De Small",
+    description1:
+      "One of the best producers South Africa has to offer, having previously worked with Drake to produce one dance",
+    description2:
+      "Dj Maphorisa is also famous his contributions in producing the popular hit single - Particular",
+  },
 ];
 
 const createFeaturedDjs=()=>{
@@ -57,76 +91,24 @@ djInfor.innerHTML = `
               alt="djbackground"
             />
             <img
-              src="${djData.djImage}"
+              src="${dj.djImage}"
               class="image2"
               alt="artistimage"
             />
           </div>
           <ul>
-            <li class="djname">${djData.djname}</li>
+            <li class="djname">${dj.djName}</li>
             <li class="djdescription1">
-            ${djData.description1}
+             ${dj.description1}
             </li>
             <li class="djdescrition2">
-              ${djData.description2}
+              ${dj.description2}
             </li>
           </ul>
         </li>
-        <li class="djcontent">
-          <div class="djimage">
-            <img
-              class="image1"
-              src="./Images/pageimages/djbackground.jpg"
-              alt="djbackground"
-            />
-            <img
-              src="./Images/pageimages/maphorisa.png"
-              class="image2"
-              alt="artistimage"
-            />
-          </div>
 
 `;
 djContainer.appendChild(djInfor);
-   })
+   });
 };
-createFeaturedDjs();
-
-// // djInfor.innerHTML = `
-// <div class="djimage">
-//             <img
-//               class="image1"
-//               src="./Images/pageimages/djbackground.jpg"
-//               alt="djbackground"
-//             />
-//             <img
-//               src="${djData.djImage}"
-//               class="image2"
-//               alt="artistimage"
-//             />
-//           </div>
-//           <ul>
-//             <li class="djname">${djData.djname}</li>
-//             <li class="djdescription1">
-//             ${djData.description1}
-//             </li>
-//             <li class="djdescrition2">
-//               ${djData.description2}
-//             </li>
-//           </ul>
-//         </li>
-//         <li class="djcontent">
-//           <div class="djimage">
-//             <img
-//               class="image1"
-//               src="./Images/pageimages/djbackground.jpg"
-//               alt="djbackground"
-//             />
-//             <img
-//               src="./Images/pageimages/maphorisa.png"
-//               class="image2"
-//               alt="artistimage"
-//             />
-//           </div>
-// // `;
-// // djContainer.appendChild(djInfor);
+createFeaturedDjs(); 
